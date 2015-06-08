@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+@IMPORT 	url("father.css"); /* 상속 */
+
+ 	.tableClass{border : 1px solid red;border-collapse: collapse;width: 500px; height: 200px;}
+
+	.trClass{border : 1px solid blue; height=500px;}
+
+	.tdClass{border : 1px solid green; text-align: center; background-color: #f3740c;color: blue;width: 150px;}
+	
+	.tdClass2{border : 1px solid gray;  text-align: center;}

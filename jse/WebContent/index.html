@@ -3,23 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<style>
+	.tableClass{border : 1px solid black;border-collapse: collapse;width: 500px; height: 200px;}
+
+	.trClass{style="border : 1px solid black; height=500px"}
+
+	.tdClass{style="border : 1px solid black; text-align: center; background-color: #333333;color: white;width: 150px;"}
+	
+	.tdClass2{style="border : 1px solid; black; text-align: center;"}
+	
+	
+</style>
+
 </head>
 <body>
-	<table style="border : 1px solid black;border-collapse: collapse;width: 550px; height: 200px;">
-		<tr style="border : 1px solid black; height=500px">
-			<td style="border : 1px solid black; text-align: center; background-color: #333333;color: white;width: 150px;">필  드</td>
-			<td style="border : 1px solid black; text-align: center; background-color: #333333;color: white;width: 150px;">입력값</td>
+
+
+
+	<table class = "tableClass">
+	
+	
+<!-- 	style="border : 1px solid black;border-collapse: collapse;width: 550px; height: 200px;"> -->
+		<tr class = trClass>
+			<td class = tdClass >필  드</td>
+			<td class = tdClass>입력값</td>
 			
 		</tr>
-		<tr style="border : 1px solid black; height: 50px;">
-			<td style="border : 1px solid; black; text-align: center;">이름</td>
-			<td style="border : 1px solid; black; text-align: center;">
+		<tr class = trClass>
+			<td class = tdClass2>이름</td>
+			<td class = tdClass2>
 				<input type="text" style="width: 350px">
 			</td>
 		</tr>
-		<tr style="border : 1px solid black; height: 50px;">
-			<td style="border : 1px solid; black; text-align: center;">나이</td>
-			<td style="border : 1px solid; black; text-align: center;">
+		<tr class = trClass>
+			<td class = tdClass2>나이</td>
+			<td class = tdClass2>
 				<input type="text" style="width: 350px">
 			</td>
 		</tr>
