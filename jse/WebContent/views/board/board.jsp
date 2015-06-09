@@ -9,7 +9,7 @@
 
 
 <style>
-	@IMPORT url("template.css");
+	@IMPORT url("board.css");
 	
 </style>
 </head>
