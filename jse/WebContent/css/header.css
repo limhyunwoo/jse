@@ -1,5 +1,5 @@
 @CHARSET "UTF-8";
-@IMPORT url("../common/common.css");
+@IMPORT url("common.css");
 img{border:none}
 #wrap{
 	width: 99%;
@@ -7,7 +7,7 @@ img{border:none}
 	margin: 0;
 	margin-right: auto; /*환경에 맞게 자동설정*/
 	margin-left:  auto;
-	background-image: url("../../images/Koala.jpg");
+	background-image: url("../images/Koala.jpg");
 	background-repeat: repeat-y;
 	/*
 	만약 배경 이미지가 작으면 이미지 반복으로 채우겠다

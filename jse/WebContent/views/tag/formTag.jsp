@@ -16,7 +16,7 @@
 			<input type="password" name = "pass" /><br />
 			<label for="hello">인사말 : </label><br />
 			<textarea name="area" id="area" cols="30" rows="10"></textarea><br />
-			<input type="image" src = "../../images/pokemon.gif" width = "300"/>
+			<input type="image" src = "<%=request.getContextPath()%>/images/pokemon.gif" width = "300"/>
 		
 		</fieldset>
 	</form>
