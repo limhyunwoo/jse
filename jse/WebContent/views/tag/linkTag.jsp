@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h3>링크태그 a 태그와 img 태그</h3>
-	<div>
+	<div> 
 		<h3>링크 태그(a) : 페이지 이동</h3>
 		<a href="#">기본형</a>
 		<a href="http://www.naver.com">네이버</a>
