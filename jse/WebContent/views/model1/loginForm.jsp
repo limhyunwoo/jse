@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<form action="login.jsp">
+	<form action="login.jsp" method="post">
 	<table style ="border : 1px solid black; border-collapse: collapse; ">  <!-- 두줄라인 하나로 합치는거가 collapse -->
 		<tr style ="border : 1px solid black; ">
 			<td style ="border : 1px solid black; ">아이디 :</td>
