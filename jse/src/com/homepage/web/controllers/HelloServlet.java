@@ -32,13 +32,17 @@ public class HelloServlet extends HttpServlet {
 		
 		
 	String path =  request.getServletPath();
-		System.out.println(""+path);
+		
+	   System.out.println("msg : "+path);
 		String name = request.getParameter("name");
+
 		
 		if(path.equalsIgnoreCase("/name/hello.nhn")){
+			 
 			gohello(request, response, name);
 			
 		}else if(path.equalsIgnoreCase("/hi.do")){
+			
 			gohi(request, response, name);	
 		}
 		
