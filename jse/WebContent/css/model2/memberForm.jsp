@@ -10,12 +10,29 @@
 	@IMPORT url("../../css/model2/kaup.css");
 	</style>
 	
+	
+	
+	<script type="text/javascript">
+	function join(){
+                            														 //버튼 이미지로 처리하는 법.
+	document.frmJoin.submit();
+	
+	}
+	
+	function login() {
+	
+	
+		document.frmLogin.submit();
+	}
+
+	</script>
+	
 </head>
 <body>
 	
 
 
-	<form action="../../model2/join.do" method="post">
+	<form action="../../model2/join.do" method="post" name ="frmJoin">
 	<fieldset>
 	<legend>회원가입</legend>
 	<table>
@@ -59,7 +76,7 @@
 	
 		<tr>
 		<td colspan="2">
-		<input type="submit" value = "전 송" />
+		<img src="<%=request.getContextPath() %>/images/btnLogin.jpg" style = "cursor : pointer" alt=""onclick = "return join()" width=20%/>
 		</td>
 	
 	</tr>
@@ -71,7 +88,7 @@
 	</fieldset>
 	</form>
 	
-	<form action="../../model2/login.do" method="post">
+	<form action="../../model2/login.do" method="post" name = "frmLogin">
 	<fieldset>
 	<legend>로그인</legend>
 	<table>
@@ -93,7 +110,7 @@
 	
 		<tr>
 		<td colspan="2">
-		<input type="submit" value = "전 송" />
+		<img src="<%=request.getContextPath() %>/images/btnJoin.jpg" style = "cursor : pointer" alt=""onclick = "return login()" width=20%/>
 		</td>
 	
 	</tr>
