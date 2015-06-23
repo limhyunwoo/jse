@@ -26,7 +26,7 @@ import com.homepage.web.services.MemberService;
 /**
  * Servlet implementation class MemberController
  */
-@WebServlet({"/model2/join.do","/model2/login.do"})
+@WebServlet({"/model2/join.do","/model2/login.do","/member/searchIdForm.do","/member/searchPassForm.do"})
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -37,7 +37,27 @@ public class MemberController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		String path =  request.getServletPath();
+		switch (path) {
+		case "/member/searchIdForm.do":
+			RequestDispatcher dispatcher3 = request.getRequestDispatcher("/views/model2/searchIdForm.jsp");
+			dispatcher3.forward(request, response);
+			break;
+		case "/member/searchPassForm.do":
+			RequestDispatcher dispatcher4 = request.getRequestDispatcher("/views/model2/searchPassForm.jsp");
+			dispatcher4.forward(request, response);
+
+		default:
+			break;
+		}
+
+		
 	
+	
+		
+		
+		
 	}
 	
 
@@ -113,16 +133,16 @@ public class MemberController extends HttpServlet {
 				
 				
 
-			default:
-				ment = "ㅎㅎ";
-				request.setAttribute("ment", ment);
-				RequestDispatcher dispatcher3= request.getRequestDispatcher("/css/model2/loginFail.jsp");   /*절대경로임<- 웹컨텐츠를 기준으로.*/
-				dispatcher3.forward(request,response);
 				
+				
+			default:
 				break;
 			}
 			
-		}}}
+		}
+
+
+	}}
 		
 	
 		

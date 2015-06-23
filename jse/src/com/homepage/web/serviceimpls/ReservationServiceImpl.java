@@ -89,7 +89,9 @@ public class ReservationServiceImpl implements ReservationService{
                    msg = "그 방은 이미 빈방입니다"; // 이미 빈방입니다 메세지
              
                 } else {
-                    id = seat[floor - 1][row - 1]; // 방에 이름이 있다면 해당 배열주소
+            
+                	
+                	id = seat[floor - 1][row - 1]; // 방에 이름이 있다면 해당 배열주소
                                                             // null처리
                     seat[floor - 1][row - 1] = null;
  
