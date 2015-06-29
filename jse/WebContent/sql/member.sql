@@ -158,7 +158,7 @@ select table_name, constraint_name, constraint_type
 from user_constraints
 where table_name = 'MEMBER';
 
---foreign key 나누기
+
 
 
 
